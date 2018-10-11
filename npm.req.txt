@@ -3,3 +3,5 @@ stylus
 nib
 morgan
 nodemon
+mongoose
+jade
