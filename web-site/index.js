@@ -17,7 +17,7 @@ function compile(str, path) {
 
 app.get('/', function (req, res) {
   res.render('index',
-	  { title: 'Indeeeeex'}
+	  { title: 'HOme'}
   )
 })
 

@@ -3,8 +3,8 @@ services:
   web:
     image: docker-node-express-mongoapp
     build: ./web-site
-    command: nodemon index.js
-    #command: node app.js
+    #command: nodemon index.js
+    command: node app.js
     ports:
       - "3000:3000"
     volumes:
