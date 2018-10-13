@@ -33,6 +33,7 @@ function compile(str, path) {
     .set('filename', path)
     .use(nib())
 }
+
 app.get('/testFind', function(req, res) {
 	database.Kitten.find(function(err, kittens){
 		if(err) return res.error(err);

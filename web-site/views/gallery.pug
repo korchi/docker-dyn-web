@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	div.container
+		form#js-upload-form
+			div.form-inline
+				div.form-group
+					input#js-upload-files
+				button.btn-primary#js-upload-submit Upload files
+		div.upload-drop-zone#drop-zone Just drag and drop files here
+
+	- var counter=0
+	each val in data
+		- var n=counter%3==0
+		if n
+			div.row
+		div.col-sm-4
+			div.thumbnail
+				img.img-thumbnail(src=val,width=200)
+				div.caption
+					p= val
+					- counter = counter + 1
